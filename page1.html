@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartPark - Smarter Parking Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">SmartPark</h1>
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <nav id="menu" class="hidden md:flex md:space-x-6 absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent px-4 py-4 md:p-0 z-50 shadow md:shadow-none">
+        <a href="#features" class="block md:inline text-gray-700 hover:text-blue-600 mb-2 md:mb-0">Features</a>
+        <a href="#how-it-works" class="block md:inline text-gray-700 hover:text-blue-600 mb-2 md:mb-0">How It Works</a>
+        <a href="#contact" class="block md:inline text-gray-700 hover:text-blue-600 mb-2 md:mb-0">Contact</a>
+        <a href="html.php" class="block md:inline bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Login</a>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section class="bg-blue-100 py-20 px-4 text-center">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Find & Reserve Parking in Seconds</h2>
+      <p class="text-base md:text-lg text-gray-700 mb-6">SmartPark helps drivers locate, reserve, and pay for parking spots effortlessly using real-time data and smart sensors.</p>
+      <a href="html.php" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-700">Get Started</a>
+    </div>
+  </section>
+
+
+  <section id="features" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-bold text-center mb-12">Why Choose SmartPark?</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <h4 class="text-xl font-semibold mb-2">Real-Time Availability</h4>
+          <p>Get live updates on available parking spots near you through our integrated sensor network.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <h4 class="text-xl font-semibold mb-2">Easy Reservations</h4>
+          <p>Reserve your preferred spot in advance via mobile or desktop to ensure a hassle-free experience.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <h3 class="text-xl font-semibold mb-2">Coming SOON</h3>
+          <h4 class="text-xl font-semibold mb-2">Secure Payments</h4>
+          <p>Pay using encrypted, secure transactions with multiple payment options supported.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8">How It Works</h3>
+      <ol class="space-y-6 text-left max-w-2xl mx-auto text-base md:text-lg">
+        <li><strong>1. Search:</strong> Enter your destination and time to view nearby available spots.</li>
+        <li><strong>2. Reserve:</strong> Choose and book your spot in real-time or in advance.</li>
+        <li><strong>3. Park:</strong> Scan your QR code at entry to access your reserved space.</li>
+        <li><strong>4. Pay:</strong> Automatic payment on exit or via your SmartPark account.</li>
+      </ol>
+    </div>
+  </section>
+
+ 
+  <section id="contact" class="py-16 px-4 text-center">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-bold mb-6">Contact Us</h3>
+      <p class="mb-4">Have questions? Reach out to our team at <a href="mailto:albionh60@gmail.com" class="text-blue-600 underline">support@smartpark.com</a></p>
+      <p>© 2025 SmartPark. All rights reserved.</p>
+    </div>
+  </section>
+
+  <script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
